@@ -6,17 +6,23 @@ body {
 .eight-ball-container {
     background: black;
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 50vmin;
+    width: 50vmin;
     margin: 0 auto;
 }
 .eight-ball-container > h1 {
     color: white;
-    padding-top: 25px;
+    font-size: 4em;
+    padding-top: 5vmin;
+    margin: 0px;
 }
 
 #text-container {
     background: rgb(25, 120, 230);
-    width: 150px;
+    width: 40vmin;
     margin: 0 auto;
+}
+
+.button {
+    margin-top: 5vmin;
 }
