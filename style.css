@@ -1,5 +1,7 @@
 body {
-    background: hsl(60, 5%, 83%);
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgb(128, 45, 253) 100%);
+    height: 100vh;
     text-align: center;
 }
 
@@ -10,7 +12,8 @@ body {
     width: 50vmin;
     margin: 0 auto;
 }
-.eight-ball-container > h1 {
+
+.eight-ball-container > h1  {
     color: white;
     font-size: 4em;
     padding-top: 5vmin;
