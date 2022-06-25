@@ -4,6 +4,7 @@ body {
     height: 100vh;
     text-align: center;
     margin: 0px;
+    animation: gradient 15s ease infinite;
 }
 
 .title-text {
