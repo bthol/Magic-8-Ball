@@ -18,16 +18,19 @@ const answers = [
     "./assets/magic8ball_20.png",
 ];
 
+//8 ball display
 const img = document.querySelector(`#eight-ball`);
 img.addEventListener("click", () => {
-
+    
     img.src = `${answers[Math.floor(Math.random() * answers.length)]}`;
 });
 
+//reset button
 document.querySelector(`#btn-reset`).addEventListener("click", () => {
     img.src = "./assets/magic8ball_extra.png";
 });
 
+//Breathing text logic
 const titleText = document.querySelector(`.title-text`);
 let toggle = true;
 setInterval(function() {

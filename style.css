@@ -42,7 +42,6 @@ body {
     top: 0px;
     box-shadow: 0 2.5px 0 hsl(0, 0%, 20%);
 }
-
 #btn-reset:hover {
     box-shadow: none;
     top: 2.5px;
