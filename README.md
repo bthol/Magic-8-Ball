@@ -1,4 +1,4 @@
 # Magic-8-Ball
 Developer: Blake Thollaug
 
-Description: this code simulates a magic eight ball.
+Description: this code simulates a magic eight ball. Click on the image to roll the ball.

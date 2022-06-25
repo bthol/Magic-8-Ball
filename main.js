@@ -1,12 +1,3 @@
-const img = document.querySelector(`#eight-ball`);
-img.addEventListener("click", () => {
-    img.src = `${answers[Math.floor(Math.random() * answers.length)]}`;
-});
-
-document.querySelector(`#btn-reset`).addEventListener("click", () => {
-    img.src = "./assets/magic8ball_extra.png";
-});
-
 const answers = [
     "./assets/magic8ball_4.png",
     "./assets/magic8ball_5.png",
@@ -26,3 +17,26 @@ const answers = [
     "./assets/magic8ball_19.png",
     "./assets/magic8ball_20.png",
 ];
+
+const img = document.querySelector(`#eight-ball`);
+img.addEventListener("click", () => {
+
+    img.src = `${answers[Math.floor(Math.random() * answers.length)]}`;
+});
+
+document.querySelector(`#btn-reset`).addEventListener("click", () => {
+    img.src = "./assets/magic8ball_extra.png";
+});
+
+const titleText = document.querySelector(`.title-text`);
+let toggle = true;
+setInterval(function() {
+    toggle = !toggle;
+    if (toggle === true) {
+        titleText.classList.remove("color-one");
+        titleText.classList.add("color-two");
+    } else {
+        titleText.classList.remove("color-two");
+        titleText.classList.add("color-one");
+    }
+}, 1600);

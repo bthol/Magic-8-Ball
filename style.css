@@ -6,7 +6,7 @@ body {
     margin: 0px;
 }
 
-h3 {
+.title-text {
     background: black;
     color: white;
     white-space: pre-line;
@@ -14,6 +14,14 @@ h3 {
     letter-spacing: 1em;
     padding: 8px 0em;
     margin: 0px;
+}
+.title-text.color-two {
+    transition: 1600ms cubic-bezier(.2, .1, .4, 0);
+    color: rgb(126, 27, 219);
+}
+.title-text.color-one {
+    transition: 1600ms ease-out;
+    color: hsl(39, 100%, 60%);
 }
 
 #eight-ball {
