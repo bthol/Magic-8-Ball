@@ -18,11 +18,14 @@ const answers = [
     "./assets/magic8ball_20.png",
 ];
 
-//8 ball display
+//8 ball display and animation
 const img = document.querySelector(`#eight-ball`);
 img.addEventListener("click", () => {
-    
-    img.src = `${answers[Math.floor(Math.random() * answers.length)]}`;
+    img.classList.add(`shake`);
+    setTimeout(function() {
+        img.classList.remove(`shake`);
+        img.src = `${answers[Math.floor(Math.random() * answers.length)]}`;
+    }, 1000)
 });
 
 //reset button

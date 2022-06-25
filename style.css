@@ -46,3 +46,12 @@ body {
     box-shadow: none;
     top: 2.5px;
 }
+
+.shake {
+    animation: shake 800ms ease-in 1;
+}
+@keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    20%, 60%, 50%, 70%, 90% {transform: translateX(-15px);}
+    40%, 80%, 60%, 80% {transform: translateX(15px);}
+}
