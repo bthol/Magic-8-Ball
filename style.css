@@ -8,7 +8,7 @@ body {
 
 .title-text {
     background: black;
-    color: white;
+    color: hsl(0, 0%, 87%);
     white-space: pre-line;
     font-size: 3vmin;
     letter-spacing: 1em;
@@ -27,10 +27,23 @@ body {
 #eight-ball {
     margin: 5vmin auto;
     width: 45vmin;
+    cursor: pointer;
 }
 
 #btn-reset {
+    position: relative;
     background: black;
-    color: white;
+    color: hsl(0, 0%, 87%);
     font-size: 3vmin;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    top: 0px;
+    box-shadow: 0 2.5px 0 hsl(0, 0%, 20%);
+}
+
+#btn-reset:hover {
+    box-shadow: none;
+    top: 2.5px;
 }
