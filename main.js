@@ -22,7 +22,7 @@ const answers = [
 const img = document.querySelector(`#eight-ball`);
 img.addEventListener("click", () => {
     img.classList.add(`shake`);
-    setTimeout(function() {
+    setTimeout(function () {
         img.classList.remove(`shake`);
         img.src = `${answers[Math.floor(Math.random() * answers.length)]}`;
     }, 1000)

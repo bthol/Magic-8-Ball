@@ -9,10 +9,10 @@ body {
 .title-text {
     background: black;
     color: hsl(0, 0%, 87%);
-    white-space: pre-line;
-    font-size: 3vmin;
+    white-space: nowrap;
+    font-size: 3.7vw;
     letter-spacing: 1em;
-    padding: 8px 0em;
+    padding: 2vh 0vw;
     margin: 0px;
 }
 .title-text.color-two {
@@ -25,8 +25,8 @@ body {
 }
 
 #eight-ball {
-    margin: 5vmin auto;
-    width: 45vmin;
+    margin: 3vh auto;
+    width: 70vmin;
     cursor: pointer;
 }
 
@@ -34,21 +34,21 @@ body {
     position: relative;
     background: black;
     color: hsl(0, 0%, 87%);
-    font-size: 3vmin;
+    font-size: 3vw;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     border: solid black;
     cursor: pointer;
     top: 0px;
-    box-shadow: 0 2.5px 0 hsl(0, 0%, 20%);
+    box-shadow: 0 3.5px 0 hsl(0, 0%, 20%);
 }
 #btn-reset:hover {
     border: solid hsl(0, 0%, 80%);
 }
 #btn-reset:active {
     box-shadow: none;
-    top: 2.5px;
+    top: 3.5px;
 }
 
 .shake {
