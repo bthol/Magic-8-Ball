@@ -25,7 +25,7 @@ body {
 }
 
 #eight-ball {
-    margin: 3vh auto;
+    margin: 3.5vh 0vw;
     width: 70vmin;
     cursor: pointer;
 }
@@ -40,6 +40,7 @@ body {
     appearance: none;
     border: solid black;
     cursor: pointer;
+    width: max-content;
     top: 0px;
     box-shadow: 0 3.5px 0 hsl(0, 0%, 20%);
 }
