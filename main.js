@@ -1,3 +1,4 @@
+//image sources
 const answers = [
     "./assets/magic8ball_4.png",
     "./assets/magic8ball_5.png",
@@ -18,14 +19,24 @@ const answers = [
     "./assets/magic8ball_20.png",
 ];
 
-//8 ball display and animation
+//image select
 const img = document.querySelector(`#eight-ball`);
-img.addEventListener("click", () => {
+
+//shake function
+function shake() {
     img.classList.add(`shake`);
     setTimeout(function () {
         img.classList.remove(`shake`);
         img.src = `${answers[Math.floor(Math.random() * answers.length)]}`;
     }, 1000)
+};
+
+//shake by click on image
+img.addEventListener("click", shake);
+
+//roll button
+document.querySelector(`#btn-shake`).addEventListener("click", () => {
+    shake();
 });
 
 //reset button
@@ -41,8 +52,12 @@ setInterval(function() {
     if (toggle === true) {
         titleText.classList.remove("color-one");
         titleText.classList.add("color-two");
+        img.classList.remove("ball-color-one");
+        img.classList.add("ball-color-two");
     } else {
         titleText.classList.remove("color-two");
         titleText.classList.add("color-one");
+        img.classList.remove("ball-color-two");
+        img.classList.add("ball-color-one");
     }
 }, 1600);

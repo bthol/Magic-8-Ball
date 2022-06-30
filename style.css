@@ -1,12 +1,15 @@
 body {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
     background: rgb(34,193,195);
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgb(128, 45, 253) 100%);
-    height: 100vh;
-    text-align: center;
-    margin: 0px;
 }
 
 .title-text {
+    cursor: default;
     background: black;
     color: hsl(0, 0%, 87%);
     white-space: nowrap;
@@ -25,12 +28,27 @@ body {
 }
 
 #eight-ball {
-    margin: 3.5vh 0vw;
-    width: 70vmin;
     cursor: pointer;
+    margin: 4vh 0vw;
+    width: 70vmin;
+    border-radius: 100%;
+}
+.ball-color-two {
+    transition: 1600ms cubic-bezier(.2, .1, .4, 0);
+    box-shadow: 0 0 1vh .1vmin hsla(0, 0%, 100%, .1);
+}
+.ball-color-one {
+    transition: 1600ms ease-out;
+    box-shadow: 0 0 3vh 1vmin hsla(0, 0%, 100%, .8);
 }
 
-#btn-reset {
+.btns-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.btn-style {
     position: relative;
     background: black;
     color: hsl(0, 0%, 87%);
@@ -40,14 +58,15 @@ body {
     appearance: none;
     border: solid black;
     cursor: pointer;
-    width: max-content;
-    top: 0px;
-    box-shadow: 0 3.5px 0 hsl(0, 0%, 20%);
+    /* width: max-content; */
+    padding: 0 1vmin;
+    box-shadow: 0 3.5px hsl(0, 0%, 30%);
 }
-#btn-reset:hover {
+
+.btn-style:hover {
     border: solid hsl(0, 0%, 80%);
 }
-#btn-reset:active {
+.btn-style:active {
     box-shadow: none;
     top: 3.5px;
 }
