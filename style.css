@@ -52,13 +52,12 @@ body {
     position: relative;
     background: black;
     color: hsl(0, 0%, 87%);
-    font-size: 3vw;
+    font-size: 6vmin;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     border: solid black;
     cursor: pointer;
-    /* width: max-content; */
     padding: 0 1vmin;
     box-shadow: 0 3.5px hsl(0, 0%, 30%);
 }
