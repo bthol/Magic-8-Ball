@@ -35,11 +35,11 @@ body {
 }
 .ball-color-two {
     transition: 1600ms cubic-bezier(.2, .1, .4, 0);
-    box-shadow: 0 0 1vh .1vmin hsla(0, 0%, 100%, .1);
+    box-shadow: 0 0 1vh .1vmin hsla(60, 10%, 80%, .1);
 }
 .ball-color-one {
     transition: 1600ms ease-out;
-    box-shadow: 0 0 3vh 1vmin hsla(0, 0%, 100%, .8);
+    box-shadow: 0 0 5vh 1vmin hsla(60, 100%, 80%, .8);
 }
 
 .btns-container {
@@ -60,10 +60,7 @@ body {
     cursor: pointer;
     padding: 0 1vmin;
     box-shadow: 0 3.5px hsl(0, 0%, 30%);
-}
-
-.btn-style:hover {
-    border: solid hsl(0, 0%, 80%);
+    border: solid hsl(60, 80%, 80%);
 }
 .btn-style:active {
     box-shadow: none;
