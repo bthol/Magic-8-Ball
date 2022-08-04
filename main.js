@@ -34,11 +34,6 @@ function shake() {
 //shake by click on image
 img.addEventListener("click", shake);
 
-//roll button
-document.querySelector(`#btn-shake`).addEventListener("click", () => {
-    shake();
-});
-
 //reset button
 document.querySelector(`#btn-reset`).addEventListener("click", () => {
     img.src = "./assets/magic8ball_extra.png";
