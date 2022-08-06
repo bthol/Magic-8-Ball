@@ -5,13 +5,27 @@ body {
     height: 100vh;
     margin: 0px;
     background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgb(128, 45, 253) 100%);
+    --color-gradient-1: hsl(181, 70%, 35%);
+    --color-gradient-2: rgb(128, 45, 253);
+    --color-gradient-3: rgb(45, 111, 253);
+    background-image: linear-gradient(270deg, var(--color-gradient-3) 0%, var(--color-gradient-2) 20%, var(--color-gradient-1) 50%,  var(--color-gradient-2) 80%, var(--color-gradient-3) 100%);
+    background-size: 500%;
+    animation: background-shift 25600ms infinite alternate linear;
+}
+
+@keyframes background-shift {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
 }
 
 .title-text {
     cursor: default;
     background: black;
-    color: hsl(0, 0%, 87%);
+    color: hsl(39, 100%, 60%);
     white-space: nowrap;
     font-size: 3.7vw;
     letter-spacing: 1em;
@@ -19,12 +33,12 @@ body {
     margin: 0px;
 }
 .title-text.color-two {
-    transition: 1600ms cubic-bezier(.2, .1, .4, 0);
-    color: rgb(126, 27, 219);
+    transition: 3200ms cubic-bezier(.3, .1, .3, 0);
+    color: hsl(39, 100%, 60%);
 }
 .title-text.color-one {
-    transition: 1600ms ease-out;
-    color: hsl(39, 100%, 60%);
+    transition: 3200ms cubic-bezier(.3, .1, .3, 0);
+    color: rgb(126, 27, 219);
 }
 
 #eight-ball {
@@ -34,11 +48,11 @@ body {
     border-radius: 100%;
 }
 .ball-color-two {
-    transition: 1600ms cubic-bezier(.2, .1, .4, 0);
+    transition: 3200ms ease-out;
     box-shadow: 0 0 1vh .1vmin hsla(60, 10%, 80%, .1);
 }
 .ball-color-one {
-    transition: 1600ms ease-out;
+    transition: 3200ms ease-in;
     box-shadow: 0 0 5vh 1vmin hsla(60, 100%, 80%, .8);
 }
 

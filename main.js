@@ -55,4 +55,4 @@ setInterval(function() {
         img.classList.remove("ball-color-two");
         img.classList.add("ball-color-one");
     }
-}, 1600);
+}, 3200);
