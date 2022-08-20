@@ -33,6 +33,11 @@ function shake() {
 
 //shake by click on image
 img.addEventListener("click", shake);
+img.addEventListener("keypress", (e) => {
+    if (e.keyCode === 13) {
+        shake();
+    }
+});
 
 //reset button
 document.querySelector(`#btn-reset`).addEventListener("click", () => {

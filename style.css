@@ -8,7 +8,7 @@ body {
     --color-gradient-1: hsl(181, 70%, 35%);
     --color-gradient-2: rgb(128, 45, 253);
     --color-gradient-3: rgb(45, 111, 253);
-    background-image: linear-gradient(270deg, var(--color-gradient-3) 0%, var(--color-gradient-2) 30%, var(--color-gradient-1) 50%,  var(--color-gradient-2) 70%, var(--color-gradient-3) 100%);
+    background-image: linear-gradient(270deg, var(--color-gradient-3) 0%, var(--color-gradient-2) 20%, var(--color-gradient-1) 50%,  var(--color-gradient-2) 80%, var(--color-gradient-3) 100%);
     background-size: 300%;
     animation: background-shift 12800ms infinite alternate linear;
 }
@@ -33,7 +33,7 @@ body {
     margin: 0px;
 }
 .title-text.color-two {
-    transition: 6400ms cubic-bezier(.7, .1, .7, 0);
+    transition: 6400ms cubic-bezier(.3, .1, .3, 0);
     color: hsl(39, 100%, 60%);
 }
 .title-text.color-one {
@@ -72,12 +72,18 @@ body {
     border: solid black;
     cursor: pointer;
     padding: 0 1vmin;
-    box-shadow: 0 3.5px hsl(0, 0%, 30%);
     border: solid hsl(60, 80%, 80%);
+    box-shadow: 0 3.5px hsl(0, 0%, 30%);
+    top: -3.5px;
 }
 .btn-style:active {
     box-shadow: none;
-    top: 3.5px;
+    top: 0px;
+}
+
+.footer-container {
+    background-color: black;
+    color: hsl(39, 100%, 100%);
 }
 
 .shake {
