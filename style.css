@@ -72,6 +72,7 @@ body {
     border: solid black;
     cursor: pointer;
     padding: 0 1vmin;
+    margin-bottom: 8px;
     border: solid hsl(60, 80%, 80%);
     box-shadow: 0 3.5px hsl(0, 0%, 30%);
     top: -3.5px;
@@ -82,6 +83,7 @@ body {
 }
 
 .footer-container {
+    height: 7vmin;
     background-color: black;
     color: hsl(39, 100%, 100%);
 }
