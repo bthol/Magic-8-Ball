@@ -11,6 +11,15 @@ body {
     background-image: linear-gradient(270deg, var(--color-gradient-3) 0%, var(--color-gradient-2) 20%, var(--color-gradient-1) 50%,  var(--color-gradient-2) 80%, var(--color-gradient-3) 100%);
     background-size: 300%;
     animation: background-shift 12800ms infinite alternate linear;
+    display: grid;
+    grid-template-rows: 1fr 50fr 10fr 1fr;
+    align-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+
+header, footer {
+    width: 100%;
 }
 
 @keyframes background-shift {
@@ -57,7 +66,6 @@ body {
 }
 
 .btns-container {
-    display: grid;
     justify-items: center;
 }
 
@@ -83,7 +91,6 @@ body {
 }
 
 .footer-container {
-    height: 7vmin;
     background-color: black;
     color: hsl(39, 100%, 100%);
 }
