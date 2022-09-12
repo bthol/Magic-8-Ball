@@ -1,12 +1,11 @@
+// Set screen dimensions to usable screen
 if (navigator.userAgent.indexOf('MSIE') > - 1 || navigator.userAgent.indexOf('Trident') > - 1) {
     // Internet Explorer
-    // Set screen dimensions to usable screen
-    document.body.style.height = document.documentElement.clientHeight;
+    document.querySelector(`.wrapper`).style.height = document.documentElement.clientHeight;
 } else {
     // All other browsers
-    // Set screen dimensions to usable screen
-    document.body.style.height = window.innerHeight;
-}
+    document.querySelector(`.wrapper`).style.height = window.innerHeight;
+};
 
 //image sources
 const answers = [
