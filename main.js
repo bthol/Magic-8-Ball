@@ -1,11 +1,16 @@
-// Set screen dimensions to usable screen
-if (navigator.userAgent.indexOf('MSIE') > - 1 || navigator.userAgent.indexOf('Trident') > - 1) {
-    // Internet Explorer
-    document.querySelector(`.wrapper`).style.height = document.documentElement.clientHeight;
-} else {
-    // All other browsers
-    document.querySelector(`.wrapper`).style.height = window.innerHeight;
+const getHeight = () => {
+    return Math.max(
+      document.body.clientHeight,
+      document.documentElement.clientHeight,
+      document.body.offsetHeight,
+      document.documentElement.offsetHeight,
+      document.body.scrollHeight,
+      document.documentElement.scrollHeight
+    )
 };
+if (getHeight() >= window.innerHeight) {
+    document.querySelector(`.wrapper`).style.height = "100vh";
+}
 
 //image sources
 const answers = [
@@ -46,11 +51,6 @@ img.addEventListener("keypress", (e) => {
     if (e.keyCode === 13) {
         shake();
     }
-});
-
-//reset button
-document.querySelector(`#btn-reset`).addEventListener("click", () => {
-    img.src = "./assets/magic8ball_extra.png";
 });
 
 //Breathing text logic
