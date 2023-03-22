@@ -1,17 +1,3 @@
-const getHeight = () => {
-    return Math.max(
-      document.body.clientHeight,
-      document.documentElement.clientHeight,
-      document.body.offsetHeight,
-      document.documentElement.offsetHeight,
-      document.body.scrollHeight,
-      document.documentElement.scrollHeight
-    )
-};
-if (getHeight() >= window.innerHeight) {
-    document.querySelector(`.wrapper`).style.height = "100vh";
-}
-
 //image sources
 const answers = [
     "./assets/magic8ball_4.png",
@@ -36,22 +22,32 @@ const answers = [
 //image select
 const img = document.querySelector(`#eight-ball`);
 
+let timeout1;
+let timeout2;
 //shake function
 function shake() {
     img.classList.add(`shake`);
-    setTimeout(function () {
+    timeout1 = setTimeout(function () {
         img.classList.remove(`shake`);
         img.src = `${answers[Math.floor(Math.random() * answers.length)]}`;
     }, 1000)
 };
 
 //shake by click on image
-img.addEventListener("click", shake);
+img.addEventListener("click", handleBall);
 img.addEventListener("keypress", (e) => {
     if (e.keyCode === 13) {
         shake();
     }
 });
+
+function handleBall() {
+    img.classList.remove("tipsy");
+    clearTimeout(timeout1);
+    clearTimeout(timeout2);
+    shake();
+    tipsy();
+}
 
 //Breathing text logic
 const titleText = document.querySelector(`.title-text`);
@@ -70,3 +66,10 @@ setInterval(function() {
         img.classList.add("ball-color-one");
     }
 }, 6400);
+
+function tipsy() {
+    timeout2 = setTimeout(function() {
+        img.classList.add("tipsy");
+    }, 4350)
+}
+tipsy();
