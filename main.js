@@ -43,6 +43,10 @@ img.addEventListener("keypress", (e) => {
 
 function handleBall() {
     img.classList.remove("tipsy");
+    titleText.classList.remove("color-one");
+    titleText.classList.remove("color-two");
+    img.classList.remove("ball-color-one");
+    img.classList.remove("ball-color-two");
     clearTimeout(timeout1);
     clearTimeout(timeout2);
     shake();

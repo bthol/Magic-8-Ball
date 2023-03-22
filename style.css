@@ -1,7 +1,7 @@
 body {
-    box-sizing: border-box;
     margin: 0px;
     text-align: center;
+    height: 100%;
     --color-gradient-1: hsl(181, 70%, 35%);
     --color-gradient-2: rgb(128, 45, 253);
     --color-gradient-3: rgb(45, 111, 253);
