@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     text-align: center;
-    height: 100%;
+    height: 100vh;
     --color-gradient-1: hsl(181, 70%, 35%);
     --color-gradient-2: rgb(128, 45, 253);
     --color-gradient-3: rgb(45, 111, 253);
@@ -92,8 +92,8 @@ footer {
 }
 @keyframes shake {
     0%, 100% {transform: translateX(0);}
-    20%, 60%, 50%, 70%, 90% {transform: translateX(-15px);}
-    40%, 80%, 60%, 80% {transform: translateX(15px);}
+    20%, 60%, 50%, 70%, 90% {transform: translateX(-25px);}
+    40%, 80%, 60%, 80% {transform: translateX(25px);}
 }
 
 .tipsy {
