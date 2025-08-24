@@ -1,10 +1,11 @@
 body {
     margin: 0px;
     text-align: center;
-    height: 100vh;
+    min-height: 100vh;
     --color-gradient-1: hsl(181, 70%, 35%);
     --color-gradient-2: rgb(128, 45, 253);
     --color-gradient-3: rgb(45, 111, 253);
+    background-color: black;
 }    
 
 .wrapper {
@@ -31,7 +32,12 @@ footer {
     width: 100%;
     display: grid;
     align-items: end;
-}    
+    background-color: black;
+}
+
+.footer-container {
+    color: hsl(39, 100%, 100%);
+}
 
 @keyframes background-shift {
     0% {
@@ -63,8 +69,7 @@ footer {
 
 #eight-ball {
     cursor: pointer;
-    margin: 4vh 0vw;
-    width: 70vmin;
+    width: 60vmin;
     border-radius: 100%;
 }    
 .ball-color-two {
@@ -74,11 +79,6 @@ footer {
 .ball-color-one {
     transition: 6400ms ease-out;
     box-shadow: 0 0 5vh 1vmin hsla(60, 100%, 80%, 1);
-}
-
-.footer-container {
-    background-color: black;
-    color: hsl(39, 100%, 100%);
 }
 
 .flex-center {
